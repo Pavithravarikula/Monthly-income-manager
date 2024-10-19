@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+#finance-form {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    padding: 10px 150px;
+    margin-left: 300px;
+}
+
+#finance-form label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+#finance-form input[type="number"],
+#finance-form input[type="date"],
+#finance-form select {
+    padding: 5px;
+    margin-right: 10px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#finance-form button {
+    padding: 5px 10px;
+    background-color: darkcyan;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#finance-form button:hover {
+    background-color: darkslategray;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th,
+td {
+    border: 2px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+th {
+    background-color: chocolate;
+    color: white;
+}
+
+tfoot td {
+    font-weight: bold;
+}
+
+.delete-btn {
+    padding: 5px 10px;
+    background-color: darkcyan;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: darkslategray;
+}
+
+canvas {
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 600px;
+}

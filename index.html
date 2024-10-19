@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Finance Tracker</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <h1>Personal Finance Tracker</h1>
+
+    <form id="finance-form">
+        <label for="type">Type:</label>
+        <select id="type">
+            <option value="income">Income</option>
+            <option value="expense">Expense</option>
+        </select>
+        <label for="category">Category:</label>
+        <input type="text" id="category" placeholder="Category">
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" placeholder="Amount">
+        <label for="date">Date:</label>
+        <input type="date" id="date">
+        <button id="add-btn">Add Entry</button>
+    </form>
+    <h2>Total Income: <span id="total-income">$0</span></h2>
+    <h2>Total Expenses: <span id="total-expenses">$0</span></h2>
+
+    <p>Savings: <span id="savings">$0</span></p>
+
+    <!-- Inputs for setting targets -->
+    <p>
+        Set Monthly Income Target: <input type="number" id="income-target" placeholder="Income Target">
+    </p>
+    <p>
+        Set Monthly Expense Target: <input type="number" id="expense-target" placeholder="Expense Target">
+    </p>
+    <button id="set-targets-btn">Set Targets</button>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Type</th>
+                <th>Category</th>
+                <th>Amount</th>
+                <th>Date</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="expense-table-body"></tbody>
+    </table>
+
+    <h2>Expense Chart</h2>
+    <canvas id="expenseChart" width="400" height="200"></canvas>
+
+    <script src="index.js">
+    </script>
+</body>
+
+</html>
